@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="gauge.min.js" id="gauge-js"></script>
+</head>
+
+<style>
+   body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+</style>
+
+<body>
+
+   <div class="wrap"
+      style="text-align: center; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 50px">
+      <canvas id="foo" height="400" width="800"></canvas>
+
+      <div class="result" id="result">
+         <div id="preview-textfield"></div>
+      </div>
+      <button id="start-test">Start Speed Test</button>
+   </div>
+
+
+   <script src="main.js" defer></script>
+</body>
+
+</html>

@@ -116,7 +116,7 @@ const testSpeed = async () => {
 startTestBtn.addEventListener('click', testSpeed);
 
  */
-
+/* 
 const opts = {
    angle: -0.3, // The span of the gauge arc
    lineWidth: 0.13, // The line thickness
@@ -200,3 +200,31 @@ const testSpeed = async () => {
 };
 
 startTestBtn.addEventListener('click', testSpeed);
+
+*/
+
+// const FastSpeedtest = require("fast-speedtest-api");
+
+// var FastSpeedtest = require("fast-speedtest-api");
+
+// let speedtest = new FastSpeedtest({
+//    token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm", // required
+//    verbose: false, // default: false
+//    timeout: 10000, // default: 5000
+//    https: true, // default: true
+//    urlCount: 5, // default: 5
+//    bufferSize: 8, // default: 8
+//    unit: FastSpeedtest.UNITS.Mbps // default: Bps
+// });
+
+// speedtest.getSpeed().then(s => {
+//    console.log(`Speed: ${s} Mbps`);
+// }).catch(e => {
+//    console.error(e.message);
+// });
+
+
+
+import SpeedTest from '@cloudflare/speedtest';
+
+new SpeedTest().onFinish = results => console.log(results.getSummary());

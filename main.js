@@ -1,4 +1,4 @@
-import SpeedTest from '@cloudflare/speedtest';
+import SpeedTest from 'https://cdn.skypack.dev/@cloudflare/speedtest';
 
 const opts = {
    angle: -0.3, // The span of the gauge arc

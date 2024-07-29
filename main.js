@@ -87,7 +87,7 @@ startTestBtn.addEventListener("click", () => {
       gauge.set(downloadMbps);
       resultDiv.textContent = `Download Speed: ${downloadMbps.toFixed(2)} Mbps`;
       startTestBtn.disabled = false;
-   }
+   };
 });
 
 // document.getElementById("start-test").addEventListener("click", () => {

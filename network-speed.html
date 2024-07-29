@@ -1,0 +1,11 @@
+<script type="module">
+   import fastSpeedTest from 'https://cdn.jsdelivr.net/npm/fast-speed-test@1.1.0/+esm'
+
+
+   fastSpeedTest().then(speed => console.log(speed + ' bytes per second'));
+   const speedTest = async () => {
+      const result = await fastSpeedTest();
+      console.log(result + ' bytes per second');
+   }
+   speedTest();
+</script>

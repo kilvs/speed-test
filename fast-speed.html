@@ -1,0 +1,20 @@
+<script src="https://cdn.jsdelivr.net/npm/fast-speedtest-api@0.3.2/src/Api.min.js"></script>
+<script type="module">
+   import fastSpeedtestApi from 'https://cdn.jsdelivr.net/npm/fast-speedtest-api@0.3.2/+esm'
+
+   let speedtest = new fastSpeedtestApi({
+      token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm", // required
+      verbose: false, // default: false
+      timeout: 10000, // default: 5000
+      https: true, // default: true
+      urlCount: 5, // default: 5
+      bufferSize: 8, // default: 8
+      unit: fastSpeedtestApi.UNITS.Mbps // default: Bps
+   });
+
+   speedtest.getSpeed().then(s => {
+      console.log(`Speed: ${s} Mbps`);
+   }).catch(e => {
+      console.error(e.message);
+   });
+</script>

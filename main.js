@@ -51,6 +51,7 @@ const randomizer = (min, max) => {
 };
 
 startTestBtn.addEventListener("click", () => {
+   resultDiv.textContent = 'Testing...';
    gauge.set(0);
    startTestBtn.disabled = true;
 
